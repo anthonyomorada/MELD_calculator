@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1491961300943.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5977C09C",
+    "lastKnownWriteTime" : 32651513914720368,
+    "last_content_update" : 1491961300943,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "D5A24581",
+        "caption" : "txp",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=txp&cache_key=D5A24581",
+        "displayedObservations" : "343",
+        "environment" : "",
+        "object" : "txp",
+        "preview" : "0",
+        "totalObservations" : "343",
+        "variables" : "34"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
