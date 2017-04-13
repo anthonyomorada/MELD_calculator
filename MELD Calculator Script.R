@@ -28,8 +28,7 @@ rm(labs,hd)
 vars$Test.Result <- as.numeric(vars$Test.Result)
 
 ##Creating Table
-txp <- select(txp, -ICD.Procedure.End.Date)
-txp$ICD.Procedure.Start.Date <- as.Date(txp$ICD.Procedure.Start.Date, "%m/%d/%Y")
+txp$Transplant.Date <- as.Date(txp$Transplant.Date, "%m/%d/%y")
 
 daycap <- 30
 df <- as.data.frame(matrix(NA, nrow(txp), daycap+1))
@@ -53,8 +52,8 @@ dial <- NA
 for(r in 1:nrow(txp)){
      for(c in 4:ncol(txp)){
          qday <- as.numeric(colnames(txp[c]))
-         pt <- txp$Medical.Record.Number..MRN.[r]
-         dt <- txp$ICD.Procedure.Start.Date[r]
+         pt <- txp$Patient.MRN[r]
+         dt <- txp$Transplant.Date[r]
          fill <- filter(vars, vars$Medical.Record.Number..MRN.==pt)
          fill$day <-as.numeric(fill$Result.Date-dt)
          #Bili
